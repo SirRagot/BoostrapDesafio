@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://i.servimg.com/u/f72/18/46/25/37/home_b10.jpg);
+  background-size: cover;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+header {
+  font-family: 'Russo One', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+header nav {
+  text-align: center;
+  background-color: rgb(65, 65, 65);
+  border-bottom: solid 2px rgb(0, 204, 231);
+}
+header nav ul li{
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  transition: background-color .5s ease-out 10ms  
+  
+}
+
+header nav ul li:hover{
+    background-color: rgb(87, 87, 87);
+
+}
+
+ul {
+  display: flexbox;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none; /* remove underline */
+  color: inherit; /* remove blue */
+}
+
+.selected{
+    background-color: rgb(87, 87, 87);
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px; 
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0, .8);
+    border-radius: 5px;
+    border: solid rgb(0, 204, 231) 2px; 
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(65, 65, 65);
+  border-top: solid 2px rgb(0, 204, 231);
+  margin-top: auto;
+  padding: 5px 0px;
+}
+
+.redes li{
+  color: white;
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  border-radius: 900px;
+  padding: 7px;
+  border: solid rgb(0, 204, 231) 2px;
+  margin-right: 15px;
+}
+
+.redes li:hover{
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+.noticias{
+  font-family: 'Russo One', sans-serif;
+  color: white; 
+  margin-bottom: 30px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px #0cb9be;
+  text-align: center;
+  text-decoration: underline 2px;
+}
+
+.subtitulo{
+  font-family: 'Macondo', cursive;
+  color: white; 
+  size: 100px;
+  margin: bottom 2px;;
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.parrafo{
+  color: white;
+  margin-bottom: 15px;
+  font-size: 20px;
+  margin-left: 10px;
+  
+}
+
+.imageContainer{
+  border-radius: 5px;  
+  border: solid white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 15px;
+  width: 50%;
+}
+.image{
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: "miFuente";
+  src: url(fonts/AurebeshAF-Canon.otf);
+}
+
+.swFont{
+  font-family: "miFuente";
+  margin-bottom: 15px;
+  color: white; 
+  text-shadow: 2px 2px 8px #05e097;
+  margin-left: 10px;
+}
+
+.box{
+  width: 50%;
+}
+
+.subcoin{
+  font-family: 'Macondo', cursive;
+  color: white; 
+  size: 100px;
+  margin: bottom 2px;;
+  font-size: 25px;
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.yodacoin{
+  margin-top: 15px;
+  height: 300px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.catalogo{
+  display: flex;
+  justify-content: space-around;
+  border: solid rgb(0, 204, 231 .1);
+  background-color: rgb(0, 0, 0, .8);
+}
+
+.detalle{
+  color: white;
+  margin-bottom: 15px;
+  font-size: 30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.price{
+  color: white;
+  margin-bottom: 15px;
+  font-size: 30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.swFont2{
+  font-family: "miFuente";
+  margin-bottom: 15px;
+  color: white; 
+  text-shadow: 2px 2px 8px #05e097;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.item{
+  border: solid white;
+  margin: 15px 15px 15px 15px;
+  background-color: black;
+}
+
+.noticiasCoin{
+  font-family: 'Russo One', sans-serif;
+  color: white; 
+  margin-bottom: 30px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px #0cb9be;
+  text-align: center;
+  text-decoration: underline 2px;
+  margin-top: 20px;
+}
+
+.tituloContactanos{
+  font-family: 'Russo One', sans-serif;
+  color: white; 
+  margin-bottom: 30px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px #0cb9be;
+  text-align: center;
+  text-decoration: underline 2px;
+  margin-top: 20px;
+}
+
+.imgcoin{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border: solid rgb(0, 204, 231); 
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.icondisc{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 5%;
+}
+
+.subdisc{
+  font-family: 'Macondo', cursive;
+  color: white; 
+  size: 100px;
+  margin: bottom 2px;;
+  font-size: 25px;
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-top: solid 2px aquamarine;
+}
+.subdisc2{
+  font-family: 'Macondo', cursive;
+  color: white; 
+  size: 100px;
+  margin: bottom 2px;;
+  font-size: 25px;
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-top: solid 2px aquamarine;
+}
+
+.redescomunidad{
+  display: flex;
+  justify-content:center
+
+}
+.logoredes{
+  margin: 15px ;
+}
+
+.contactanos{
+  margin: 0 auto;
+}
+.form{
+  display: flex;
+}
+
+.form input{
+  display:block;
+}
+
+.form select{
+  display:block;
+}
+
+.form textarea{
+  display:block;
+}
+
+.datosPersonales{
+  width:50%;
+}
+.comentario{
+  width:50%;
+}
+
+.comentario textarea{
+  height: 5.5em;
+}
+
+.contactanos h3{
+  font-family: 'Russo One', sans-serif;
+  color: white; 
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 8px #0cb9be;
+  text-align: center;
+  margin-top: 20px;
+}
+.contactanos input{
+  font-family: 'Russo One', sans-serif;
+  margin-bottom:5px;
+  width:80%;
+}
+.contactanos textarea{
+  font-family: 'Russo One', sans-serif;
+  margin-bottom:5px;
+  width:80%;
+}
+.contactanos select{
+    font-family: 'Russo One', sans-serif;
+    margin-bottom:5px;
+    width:80%;
+}
+.contactanos label{
+  font-family: 'Russo One', sans-serif;
+  color: white; 
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #0cb9be;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btnEnviar{
+  padding:5px;
+  font-family: 'Russo One', sans-serif;
+  border-radius: 0;
+  float:right;
+}
+
+.btnContainer{
+  width:80%;
+}
+
+
+
+#carouselExampleDark {
+  width: 1000px;
+  height: 1000px;
+  border: solid rgb(0, 204, 231); 
+  margin-bottom: 10px;
+  background-color: grey;
+}
+
+.card:hover{
+  border: solid white 1px;
+  background-color: grey;
+
+}

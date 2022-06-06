@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foro de Rol</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="../img/icons8-jedi-16.png"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://jkhub.org/wiki/images/4/42/Coruscant.png"
+        alt="logo"
+        height="100"
+        width="100"
+      />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="normativa.html">Normativa</a></li>
+          <li><a href="merchandasing.html">Coins</a></li>
+          <li class="selected"><a href="#">Contáctanos</a></li>
+          <li><a href="cuenta.html">Comunidad</a></li>
+        </ul>
+      </nav>
+    </header>
+      <div class="contactanos">
+        <h1 class="tituloContactanos">Contáctanos</h1>
+        <h3>Tu opinión es importante para nosotros</h3>
+        <form class="form">
+          <div class="datosPersonales">
+            <label for="name">Nombre</label>
+            <input type="text" id="name"></input>
+            <label for="email">Email</label>
+            <input type="Email" id="email"></input>
+            <label for="cmbMotivoContacto">Los contacto porque:</label>
+            <select id="cmbMotivoContacto">
+              <option value="1">Problema al comprar</option>
+              <option value="2">Encontre un bug</option>
+            </select>
+          </div>
+          <div class="comentario">
+            <label for="txtComentario">Comentario:</label>
+            <textarea id="txtComentario"></textarea>
+            <div class="btnContainer">
+              <button type="submit" class="btnEnviar">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer class="footer">
+        <ul class="redes"> 
+          <li><img src="../img/icons8-facebook-48.png"></li>
+          <li><img src="../img/discord.png"></li>
+          <li><img src="../img/twitterlogo.png"></li>
+        </ul>
+      </footer>
+  </body>
+</html>
