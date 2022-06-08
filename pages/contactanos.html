@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Foro de Rol</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -42,30 +44,24 @@
           <li><a href="cuenta.html">Comunidad</a></li>
         </ul>
       </nav>
-    </header>
       <div class="contactanos">
         <h1 class="tituloContactanos">Contáctanos</h1>
+        <h4 class="swFont3">Contáctanos</h4>
         <h3>Tu opinión es importante para nosotros</h3>
-        <form class="form">
-          <div class="datosPersonales">
-            <label for="name">Nombre</label>
-            <input type="text" id="name"></input>
-            <label for="email">Email</label>
-            <input type="Email" id="email"></input>
-            <label for="cmbMotivoContacto">Los contacto porque:</label>
-            <select id="cmbMotivoContacto">
-              <option value="1">Problema al comprar</option>
-              <option value="2">Encontre un bug</option>
-            </select>
-          </div>
-          <div class="comentario">
-            <label for="txtComentario">Comentario:</label>
-            <textarea id="txtComentario"></textarea>
-            <div class="btnContainer">
-              <button type="submit" class="btnEnviar">Enviar</button>
-            </div>
-          </div>
-        </form>
+  <div class="formulario">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+  </div>
       </div>
       <footer class="footer">
         <ul class="redes"> 
@@ -74,5 +70,7 @@
           <li><img src="../img/twitterlogo.png"></li>
         </ul>
       </footer>
+        <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

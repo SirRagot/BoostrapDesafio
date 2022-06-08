@@ -379,3 +379,21 @@ footer{
   background-color: grey;
 
 }
+
+.formulario{
+  width: 500px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.swFont3{
+  font-family: "miFuente";
+  margin-bottom: 15px;
+  color: white; 
+  text-shadow: 2px 2px 8px #05e097;
+  margin-left: 10px;
+  text-align: center;
+  font-size: 60px;
+}
